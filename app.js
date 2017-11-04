@@ -10,7 +10,7 @@ app.get('/todos/:id',function(req,res){
 		if(todos_array[i].id === req.params.id){
 			console.log('selected_todos11'+JSON.stringify(todos_array[i]));
 			break;
-		}			
+		}
 	}
 	res.send(JSON.stringify(todos_array[i]));
 });
@@ -76,10 +76,10 @@ app.get('/2daytom/:userid',function(req,res){
 	var todos_2dayTom = [];
 	if(typeof selected_user !== 'undefined'){
 		for(var i=0; i < todos_array.length ; i++){
-		if(todos_array[i].userid === selected_user.id && todos_array[i].done === false){			
-				var target_date = new Date(todos_array[i].targetDate);
-				var current_date = new Date();
-				if(moment().diff(target_date,current_date) > 125580628){
+		if(todos_array[i].userid === selected_user.id && todos_array[i].done === false){
+				var target_date = moment(new Date(todos_array[i].targetDate));
+				var current_date = moment(new Date());
+				if(target_date.diff(current_date) > 0 && target_date.diff(current_date) < 172800000){
 					todos_2dayTom.push(todos_array[i]);
 				}
 			}
