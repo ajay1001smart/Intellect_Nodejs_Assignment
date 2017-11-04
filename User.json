@@ -1,0 +1,31 @@
+{
+  "User": [
+    {
+      "id": "1",
+      "fName": "Ajay",
+      "lName": "Kumar",
+      "email": "ajayayja@gmail.com",
+      "pinCode": 411057,
+      "birthDate": "02-MAR-1992",
+      "isActive": false
+    },
+    {
+      "id": "2",
+      "fName": "Kanhaiya",
+      "lName": "Kumar",
+      "email": "kanhaiya@gmail.com",
+      "pinCode": 411057,
+      "birthDate": "02-MAR-1992",
+      "isActive": true
+    },
+    {
+      "id": "3",
+      "fName": "Shubham",
+      "lName": "Kumar",
+      "email": "shubham@gmail.com",
+      "pinCode": 411057,
+      "birthDate": "02-MAR-1992",
+      "isActive": false
+    }
+  ]
+}
